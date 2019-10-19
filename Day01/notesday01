@@ -1,0 +1,72 @@
+add a php markup language translation instruction to get access to the binary that converts the php code to be executed to the header of each php file!
+like this:
+#!/usr/bin/php
+
+<?PHP
+
+
+
+
+?>
+
+then add tags to indicate which code need to be interpreted from php.
+like this:
+<?PHP
+
+//add PHP code here
+
+
+?>
+
+//add HTML code here
+
+chmod 755 your program to make it executable
+call your file .php
+no need to gcc or anything, just run it with ./ after chmod and adding the tags mentioned above
+
+every PHP variable is prosessed by a "$"
+like this:
+$variableint = 42;
+$variablestring = "Hello";
+$variablestrarray = array("zero", "one", "two");
+$variableintarray = array(1, 2, 3);
+$variablehashtable = array("key1" => "val1", "key2" => "val2");	*the => creates a link
+	*to print hashtable:
+	echo $variablehashtable["key1"]; prints "val1" just like echo $variablearray[0]; will print 1i
+use echo $variablename."\n"; to display variables, the . concatenates the strings together
+for example $variableint."\n".$variablestring."\n"; will print 42\nHello\n
+php automatically converts the variables to strings or ints for you
+so print $sum = "21" + "21"; will print 42 even though they are strings, they are added together like ints
+
+use print_r instead of print to display an entire array (all it's values)
+
+creating a function:
+
+function functionnamehere($inputvariable1, $inputvaribale2)
+{
+	return $inputvariable1 + $inputvariable2;
+}
+
+calling the function:
+
+echo functionnamehere("36", "42");
+
+you can use most c language basics in php :) including if, else statements, comparisons (==, >=, etc)
+this is why we had to learn c first :)
+you can also use argv and argc as variables: $argv and $argc and $argv is an array (use print_r and indexes)
+
+for each:
+	better than while loops, use instead of while loops
+	foreach is way faster than a while loop
+	use when you need to apply something to every item in an array
+	like this:
+	foreach ($argv as $x)
+	{
+		echo "$x\n";
+	}
+
+explode: useful function, delimits databse entries for you as separate items in an array so one long string turns into an array with different elements indexed
+$array = explode(",", "0,1,2");
+
+reference: www.php.net
+and www.w3schools.com
