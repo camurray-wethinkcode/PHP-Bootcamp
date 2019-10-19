@@ -1,0 +1,76 @@
+This day is a bit of a challenge to wrap your head around, if you need help, ask me and I'll explain everything below in person :) I did my best to make it simple for you.
+Some definitions:
+Verbose - In computer science, 'verbose' is basically used for long lines of codes when that particular code can be written in few lines. Compacting the number of line for same logic.
+Homogeneous coordinates - Homogeneous coordinates are ubiquitous in computer graphics because they allow common vector operations such as translation, rotation, scaling and perspective projection to be represented as a matrix by which the vector is multiplied. https://en.wikipedia.org/wiki/Homogeneous_coordinates
+Right hand - Most of the various left- and right-hand rules arise from the fact that the three axes of three-dimensional space have two possible orientations. One can see this by holding one's hands outward and together, palms up, with the fingers curled, and the thumb out-stretched. If the curl of the fingers represents a movement from the first or x-axis to the second or y-axis, then the third or z-axis can point along either thumb. https://en.wikipedia.org/wiki/Right-hand_rule
+Scalar - adjective (of a quantity) having only magnitude, not direction.
+Magnitude - Magnitude refers to that the maximum or greater extent of size and it's direction of an object. The word magnitude used In vectors and scalars to define it's directions.
+Vector - In physical science and engineering, a vector is a geometric object which has both magnitude or length and direction. ... Examples: Velocity and force are vector quantities. In contrast, speed and distance are scalar quantities, which have magnitude but not direction.
+Vertex - Vertex (physics), a point where particles collide and interact. Vertex operator algebra in conformal field theory. Vertex function, describing the interaction between a photon and an electron. Vertex typically means a corner or a point where lines meet. For example a square has four corners, each is called a vertex. The plural form of vertex is vertices.
+Cosine - The trigonometric function that is equal to the ratio of the side adjacent to an acute angle (in a right-angled triangle) to the hypotenuse. https://www.mathsisfun.com/definitions/cosine.html
+Cross multiplication/cross product - cross product. Geometrically, the cross product of two vectors is the area of the parallelogram between them. The symbol used to represent this operation is a large diagonal cross (×), which is where the name "cross product" comes from. 
+Dot product - Geometrically, the dot product of two vectors is the magnitude of one times the projection of the second onto the first.
+Also see - https://physics.info/vector-multiplication/
+
+ex00:
+In the resources file on intra you will be given 2 files, "main_00.out" and "main_00.php". Copy these to the ex00 folder.
+You need to create two files, "Color.class.php" and "Color.doc.txt".
+In the Color.doc.txt file you need to write documentation to explain what your class does, what the attributes are, etc. It doesn't have to be extensive.
+The php file must contain instructions on creating the output expected, which should be identical to the given "main_00.out", so when you run "php main_00.php" in your terminal, this main php file will call your Color.class.php file which will call your Color.doc.txt file and display, on the standard output, text identical to the contents of "main_00.out".
+So, using my files, try this:
+1) cat main_00.out (output will be shown on screen)
+2) php main_00.php (output shown on screen should be identical)
+If you try to run php main_00.php and the Color.class.php file or Color.doc.txt file doesn't exist, you should get an error. If your output is not the same as the contents of main_00.txt your coding is incorrect.
+ONLY SUBMIT Color.class.php and Color.doc.txt!
+
+ex01:
+You will use "Color.class.php" and "Color.doc.txt" from ex00 here so copy them over (but don't submit them!)
+In the resources file on intra you will be given 2 files, "main_01.out" and "main_01.php". Copy these to the ex01 folder.
+You need to create two files, "Vertex.class.php" and "Vertex.doc.txt".
+In the Vertex.doc.txt file you need to write documentation to explain what your class does, what the attributes are, etc. It doesn't have to be extensive.
+Do exactly the same as ex00: the vertex php file must contain instructions on creating the output expected, which should be identical to the given "main_01.out", so when you run "php main_01.php" in your terminal, this main php file will call your Vertex.class.php file, which will call your Vertex.doc.txt file and the Color.class.php file from ex00 (which will in turn call Color.doc.txt) and display, on the standard output, text identical to the contents of "main_01.out".
+So, using my files, try this:
+1) cat main_01.out (output will be shown on screen)
+2) php main_01.php (output shown on screen should be identical)
+Note that the top section that states: your documentation here, will be replaced by your documentation you write in the doc.txt file, you get grades for this so write something (anything, use my text if you need to as an example).
+Note that the text on every line that contains "w:1.00, Color( red: ... ) " is optional, as these are bonus attributes, but the x, y, and z coordinates are mandatory and must be present along with the contructed/desctructed word at the end of most lines.
+ONLY SUBMIT Vertex.class.php and Vertex.doc.txt!
+
+ex02:
+Okay, so now we rinse and repeat again.
+Copy "Color.class.php", "Color.doc.txt", "Vertex.class.php" and "Vertex.doc.txt" over to your ex02 folder.
+In the resources file on intra you will be given 2 files, "main_02.out" and "main_02.php". Copy these to the ex02 folder.
+You need to create two files, "Vector.class.php" and "Vector.doc.txt".
+In the Vector.doc.txt file you need to write documentation to explain what your class does, what the attributes are, etc. It doesn't have to be extensive.
+Do exactly the same as ex01: the vector php file must contain instructions on creating the ouput expected, which should be identical to the given "main_02.out", so when you run "php main_02.php" in your terminal, this main php file will call your Vector.class.php file, which will call your Vector.doc.txt file and your Vertex.class.php file which in turn will call your Vertex.doc.txt file and your Color.class.php file which in turn will call your Color.doc.txt file...my god, and display, on the standard output, text identical to the contents of "main_02.out". You will need to create a few mathematical functions that add, multiply, etc, to get the identical output exactly correct, see the pdf for details.
+So, using my files, try this:
+1) cat main_02.out (output will be shown on screen)
+2) php main_02.php (output shown on screen should be identical)
+Note that the top section that states: your documentation here, will be replaced by your documentation you write in the doc.txt file, you get grades for this so write something (anything, use my text if you need to as an example).
+ONLY SUBMIT Vector.class.php and Vector.doc.txt!
+
+ex03:
+Note that here the wording from main_03.out and main_03.php is similar, but not identical, just focus on making sure you matrix values are correct.
+Okay, you know the drill...
+In ex03 folder, copy:
+Color.class.php
+Color.doc.txt
+Vertex.class.php
+Vertex.doc.txt
+Vector.class.php
+Vector.doc.txt
+Then, create:
+Matrix.class.php
+Matrix.doc.txt
+In Matrix.doc.txt add your documentation that maps out what your class is for in your own words, doesn't have to be extensive.
+In Matrix.class.php add code that will work with main_03.php to create the output in main_03.out and add the functions as asked for in the pdf.
+Repeat the steps from the previous exercises where you cat the main_03.out and then php main_03.php and see that the output is similar (not identical in this exercise as the wording is different if you vim the main_03.php file, you'll see) to see that your Matrix.class.php code works.
+ONLY SUBMIT Matrix.class.php and Matrix.doc.txt!
+
+ex04:
+repeat...create the two Camera files
+
+ex05:
+On this day, you will create a png image using the main_05.php file given along with your code and the file from every single previous exercise...good luck! Your image should look similar to render_rasterize.png given in the resources for the day. Sumbit your two Triangle files, and your two Render files only.
+
+ex06 is extra, a bonus, and optional and I ain't doing it because fuck my life this day was hard! I learnt math stuff and graphics...geez

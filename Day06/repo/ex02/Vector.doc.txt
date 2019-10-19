@@ -1,0 +1,49 @@
+
+<- Vector ----------------------------------------------------------------------
+The Vector class allows us to introduce a convention with a right hand orientation in 3D.
+
+For colors:
+An instance can be contructed from either a RGB value:
+new Color( array( 'rgb' => 12345 ) );
+
+Or from distinct red, green, blue constitutives:
+new Color( array( 'red' => 255, 'green' => 255, 'blue' => 255 ) );
+
+Red, green, blue constitutives and RGB values are converted to intergers.
+Negative or > to 255 color constitutives are left as is.
+Any other use is undefined behaviour.
+
+The class provides the following methods :
+
+Color   add( Color $rhs );
+Adds each color constitutive and returns a new Color instance.
+
+Color   sub( Color $rhs );
+Substracts each color constitutive and returns a new Color instance.
+
+Color   mult( $f );
+Multiplies each color constitutive by factor $f and returns a new Color
+instance.
+
+A vector is represented by the following characteristics:
+x: x axis magnitude
+y: y axis magnitude
+z: z axis magnitude
+w: default is worth 0.0 and is a homogeneous coordinate that helps simplify matrix calculations
+Each 5 class attributes (x, y, z, w, color) build on the Vertex property, which contains it's coordinates and has a set() and get() command for each attribute.
+
+The Vector class contains:
+In it's constructor array, the following keys:
+dest() the vector's destination vertex
+orig() the vector's origin vertex, by default worth a new instance of the x=0, y=0, z=0, w=1 vertex
+As public methods:
+float magnitude() returning the vector's length (or "norm")
+Vector normalize() returning a normalized version of the vector, if the vector is already normalized, returning a fresh copy of the vector
+Vector add( Vector $rhs ) returning the sum vector of both vectors
+Vector sub( Vector $rhs ) returning the difference vector of both vectors
+Vector opposite() returning the opposite vector
+Vector scalarProduct( $k ) returning the multiplication of the vector with a scalar
+float dotProduct( Vector $rhs ) returning the scalar multiplication of both vectors
+float cos( Vector $rhs ) returning the angle's appendix cosine between both vectors
+Vector crossProduct( Vector $rhs ) returning the cross multiplication of both vectors from a right hand mark
+---------------------------------------------------------------------- Vector ->
