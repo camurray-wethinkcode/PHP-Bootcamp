@@ -1,0 +1,25 @@
+		.box  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+		.box td{font-family:Arial, sans-serif;font-size:1vmin;padding:0px 0px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+		.box th{font-family:Arial, sans-serif;font-size:1vmin;font-weight:normal;padding:0px 0px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+		.box .box-green{background-color:#22bd20;border-color:#ffffff;text-align:left}
+		.box .box-orange{background-color:#e36a14;border-color:#ffffff;text-align:left}
+		.box .box-invisible{border-color:#ffffff;text-align:left}
+		.box .box-red{background-color:#d91914;border-color:#ffffff;text-align:left}
+		.box .box-invisiblevatop{border-color:#ffffff;text-align:left;vertical-align:top}
+		.box .box-redvatop{background-color:#d91914;border-color:#ffffff;text-align:left;vertical-align:top}
+		.box .box-silver{background-color:#efefef;border-color:#ffffff;text-align:left;vertical-align:top}
+		.box .box-blue{background-color:#1d1db5;border-color:#ffffff;text-align:left;vertical-align:top}
+		.box .box-greentextblack{background-color:#22bd20;color:#000000;border-color:#ffffff;text-align:left}
+		.box .box-greenvatop{background-color:#22bd20;border-color:#ffffff;text-align:left;vertical-align:top}
+		.box .box-grey{background-color:#c0c0c0;border-color:#ffffff;text-align:left;vertical-align:top}
+		.box .box-orangevatop{background-color:#e36a14;border-color:#ffffff;text-align:left;vertical-align:top}
+		.box .box-burgundy{background-color:#850316;border-color:#ffffff;text-align:left;vertical-align:top}
+		.box .box-purple{background-color:#a005b0;border-color:#ffffff;text-align:left;vertical-align:top}
+		.box .box-pink{background-color:#ed07b0;border-color:#ffffff;text-align:left;vertical-align:top}
+		.ins  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+		.ins td{font-family:Arial, sans-serif;font-size:1vmin;padding:0px 0px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+		.ins th{font-family:Arial, sans-serif;font-size:1vmin;font-weight:normal;padding:0px 0px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+		.box .top{font-size:100%;border:transparent;text-align:right;width:40px}
+		.box .mid{font-size:100%;border:transparent;text-align:center;width:40px;font-size:150%}
+		.box .bot{font-size:100%;border:transparent;text-align:left;width:40px}
+		.center{display:block;margin-left:auto;margin-right:auto;width:30%}
